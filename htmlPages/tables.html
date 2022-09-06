@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        table{
+            margin: auto;
+            margin-top:100px;
+            width: 70vw;
+            height: 50vh;
+            font-weight: bold;
+             
+        }
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+         }
+    th{
+        padding: 20px;
+        background-color: ghostwhite;
+        
+
+    }
+    thead{
+        box-shadow: 0 4px 8px 0 rgba(134, 131, 131, 0.2), 0 6px 20px 0 rgba(117, 108, 108, 0.19);
+
+    }
+
+    .ip_address{
+        color: blue;
+        font-weight: bold;
+
+    }
+
+    .good{
+        background-color: rgb(96, 197, 96);
+        color: green;
+        
+    }
+
+    .damaged{
+        background-color: rgb(201, 101, 100);
+        color: rgb(128, 0, 0);
+        
+    }
+
+    .repair{
+        background-color: rgb(190, 190, 78);
+        color: rgb(228, 228, 7);
+    }
+    </style>
+   
+    <title>Information Page</title>
+
+</head>
+
+<body>
+    
+
+    
+ 
+    <Table>
+        <thead>
+            <th>IP Address</th>
+            <th>Active Status</th>
+            <th>Remark</th>
+           
+
+        </thead>
+        <tbody>
+            <tr>
+                <td class="ip_address">192.168.1.1</td>
+                <td class="good">Good</td>
+                <td>Working Fine </td>
+            </tr>
+
+            <tr>
+                <td class="ip_address">192.168.1.1</td>
+                <td class="good">Good</td>
+                <td>Working Fine </td>
+            </tr>
+
+
+            <tr >
+                <td class="ip_address">192.168.1.1</td>
+                <td class="repair" >Repair</td>
+                <td>Working Fine </td>
+            </tr>
+
+
+            <tr>
+                <td class="ip_address">192.168.1.1</td>
+                <td class="damaged">Damaged</td>
+                <td>Working Fine </td>
+            </tr>
+            
+            <tr>
+                <td class="ip_address">192.168.1.1</td>
+                <td class="repair">Repair</td>
+                <td>Working Fine </td>
+            </tr>
+        </tbody>
+
+
+    </Table>
+</body>
+</html>

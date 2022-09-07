@@ -1,117 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-        }
-        table{
-            margin: auto;
-            margin-top:100px;
-            width: 70vw;
-            height: 50vh;
-            font-weight: bold;
-             
-        }
-        table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        text-align: center;
-         }
-    th{
-        padding: 20px;
-        background-color: ghostwhite;
-        
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
 
-    }
-    thead{
-        box-shadow: 0 4px 8px 0 rgba(134, 131, 131, 0.2), 0 6px 20px 0 rgba(117, 108, 108, 0.19);
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
 
-    }
+        <link rel="stylesheet" href="../style/style.css">
 
-    .ip_address{
-        color: blue;
-        font-weight: bold;
 
-    }
-
-    .good{
-        background-color: rgb(96, 197, 96);
-        color: green;
-        
-    }
-
-    .damaged{
-        background-color: rgb(201, 101, 100);
-        color: rgb(128, 0, 0);
-        
-    }
-
-    .repair{
-        background-color: rgb(190, 190, 78);
-        color: rgb(228, 228, 7);
-    }
-    </style>
-   
-    <title>Information Page</title>
+  
 
 </head>
 
+
 <body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-blue">
+        <div class="container table_container">
+            <a class="navbar-brand font-weight-bold text-white" href="#">Logo</a>
+
+            <button class="navbar-toggler shadow-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="ri-menu-3-line text-white"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                    <li class="nav-item mx-3 active">
+                        <a class="nav-link text-white" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="#">About</a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="#">Services</a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Invoice</th>
+                    <th>Company</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">INV__1001</a></td>
+                    <td>Paragon</td>
+                    <td>1/5/2021</td>
+                    <td>
+                        <p class="status status-unpaid">Unpaid</p>
+                    </td>
+                    <td class="amount">$520.18</td>
+                </tr>
+                <tr>
+                    <td><a href="#">INV__1002</a></td>
+                    <td>Sonic</td>
+                    <td>1/4/2021</td>
+                    <td>
+                        <p class="status status-paid">Paid</p>
+                    </td>
+                    <td class="amount">$415.25</td>
+                </tr>
+                <tr>
+                    <td><a href="#">INV__1003</a></td>
+                    <td>Innercircle</td>
+                    <td>1/2/2021</td>
+                    <td>
+                        <p class="status status-pending">Pending</p>
+                    </td>
+                    <td class="amount">$1324.84</td>
+                </tr>
+                <tr>
+                    <td><a href="#">INV__1004</a></td>
+                    <td>Varsity Plus</td>
+                    <td>12/30/2020</td>
+                    <td>
+                        <p class="status status-pending">Pending</p>
+                    </td>
+                    <td class="amount">$998.26</td>
+                </tr>
+                <tr>
+                    <td><a href="#">INV__1005</a></td>
+                    <td>Highlander</td>
+                    <td>12/18/2020</td>
+                    <td>
+                        <p class="status status-paid">Paid</p>
+                    </td>
+                    <td class="amount">$1152.35</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     
-
-    
- 
-    <Table>
-        <thead>
-            <th>IP Address</th>
-            <th>Active Status</th>
-            <th>Remark</th>
-           
-
-        </thead>
-        <tbody>
-            <tr>
-                <td class="ip_address">192.168.1.1</td>
-                <td class="good">Good</td>
-                <td>Working Fine </td>
-            </tr>
-
-            <tr>
-                <td class="ip_address">192.168.1.1</td>
-                <td class="good">Good</td>
-                <td>Working Fine </td>
-            </tr>
-
-
-            <tr >
-                <td class="ip_address">192.168.1.1</td>
-                <td class="repair" >Repair</td>
-                <td>Working Fine </td>
-            </tr>
-
-
-            <tr>
-                <td class="ip_address">192.168.1.1</td>
-                <td class="damaged">Damaged</td>
-                <td>Working Fine </td>
-            </tr>
-            
-            <tr>
-                <td class="ip_address">192.168.1.1</td>
-                <td class="repair">Repair</td>
-                <td>Working Fine </td>
-            </tr>
-        </tbody>
-
-
-    </Table>
 </body>
+
 </html>
